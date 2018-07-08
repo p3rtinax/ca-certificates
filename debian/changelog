@@ -3,6 +3,8 @@ ca-certificates (20180409~deb9u1) UNRELEASED; urgency=medium
   * Rebuild for stretch.
   * debian/{compat,control}:
     Revert to debhelper compat 10.
+  * Revert openssl >= 1.1.0 dependency bump and revert to using `c_rehash`
+    instead of `openssl rehash`.
 
  -- Andreas Beckmann <anbe@debian.org>  Sun, 08 Jul 2018 14:16:46 +0200
 
