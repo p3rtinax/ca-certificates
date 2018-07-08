@@ -61,6 +61,12 @@ ca-certificates (20170717) unstable; urgency=medium
     Prevent postinst failure on read-only /usr/local. Closes: #843722
   * mozilla/certdata2pem.py:
     Remove email-only roots from mozilla trust store. Closes: #721976
+  * debian/NEWS:
+    Remove. The CA add/remove info is in the changelog for users that wish to
+    know what certificate authorities were added or removed. The default
+    installation of apt-listchanges results in lots of emails from users
+    wondering why the package maintainer is emailing them or halting their
+    automated upgrades.
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.14.
     Closes: #858064
